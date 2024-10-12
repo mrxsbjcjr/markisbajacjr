@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pricelist - Markis Baja Cianjur</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling untuk body */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-image: url('image5.jpg'); /* Mengatur gambar sebagai latar belakang */
+            background-size: cover; /* Gambar menutupi seluruh area */
+            background-position: center; /* Memposisikan gambar di tengah */
+            background-repeat: no-repeat; /* Tidak mengulang gambar */
+            color: #333;
+        }
+
+        /* Styling untuk header */
+        header {
+            background-color: rgba(52, 58, 64, 0.8); /* Latar belakang transparan */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        /* Styling untuk kontainer */
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* Styling untuk daftar harga */
+        #price-list {
+            flex: 1 1 100%; /* Mengatur agar memenuhi 100% lebar pada mobile */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #price-list h2 {
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        #price-list h3 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        /* Styling untuk daftar harga */
+        #price-list ul {
+            list-style-type: none;
+        }
+
+        #price-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #28a745; /* Warna hijau untuk harga */
+        }
+
+        /* Styling untuk aside produk */
+        #product-images {
+            flex: 1 1 100%; /* Mengatur agar memenuhi 100% lebar pada mobile */
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #product-images img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        /* Styling untuk footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        /* Styling untuk tautan sosial media */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links h3 {
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff; /* Warna link */
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #0056b3; /* Warna link saat hover */
+        }
+
+        /* Media query untuk responsif */
+        @media (min-width: 768px) {
+            #price-list {
+                flex: 2; /* Memberikan lebih banyak ruang pada layar lebih besar */
+            }
+
+            #product-images {
+                flex: 1;
+                margin-left: 20px; /* Menambahkan margin untuk desktop */
+                margin-top: 0; /* Menghilangkan margin top pada desktop */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diskon Bahan Bangunan - Spesial Akhir Tahun!!</h1>
+        <div class="contact-links">
+            <a href="https://wa.me/081234903272" target="_blank">
+                <img src="wa.png" alt="WhatsApp" class="social-icon"> 
+            </a>
+            <span>Kontak WA: <strong>081234903272</strong></span>
+        </div>
+    </header>
+
+    <div id="container">
+        <section id="price-list">
+            <h2>Daftar Harga</h2>
+            <h3>Besi Beton</h3>
+            <ul>
+                <li>Besi 6 TJ: <span class="price">Rp 27.000</span></li>
+                <li>Besi 8 MRC/TJ: <span class="price">Rp 39.000</span></li>
+                <li>Besi 10 MRC/TJ: <span class="price">Rp 58.500</span></li>
+                <li>Besi 12 MRC/TJ: <span class="price">Rp 86.000</span></li>
+                <li>Besi 13 URIl MRC/TJ: <span class="price">Rp 103.000</span></li>
+            </ul>
+
+            <h3>Baja Ringan</h3>
+            <ul>
+                <li>Baja 0,75 Full: <span class="price">Rp 80.000</span></li>
+                <li>Baja 0,70 Full: <span class="price">Rp 74.000</span></li>
+                <li>Baja 0,65 Full: <span class="price">Rp 63.000</span></li>
+                <li>Reng 0,40: <span class="price">Rp 35.000</span></li>
+            </ul>
+
+            <h3>Atap Spandek</h3>
+            <ul>
+                <li>Spandek 0,25: <span class="price">Rp 37.000/M</span></li>
+                <li>Spandek 0,30: <span class="price">Rp 45.000/M</span></li>
+                <li>Spandek Pasir: <span class="price">Rp 45.000/M</span></li>
+                <li>Alderon Double Layer: <span class="price">Rp 168.000/M</span></li>
+                <li>Dr Shiele Double Layer: <span class="price">Rp 140.000/M</span></li>
+                <li>Fuji Double Layer: <span class="price">Rp 137.000/M</span></li>
+                <li>Genteng Metal Pasir: <span class="price">Rp 25.000</span></li>
+                <li>Buble Voil: <span class="price">Rp 300.000</span></li>
+            </ul>
+
+            <h3>Bondek Cor Full</h3>
+            <ul>
+                <li>Bondek 0,75: <span class="price">Rp 119.000/M</span></li>
+                <li>Bondek 0,70: <span class="price">Rp 110.000/M</span></li>
+                <li>Bondek 0,65: <span class="price">Rp 99.000/M</span></li>
+            </ul>
+
+            <h3>Wiremesh</h3>
+            <ul>
+                <li>M 6: <span class="price">Rp 320.000/lembar</span></li>
+                <li>M 8: <span class="price">Rp 580.000/lembar</span></li>
+                <li>M 10: <span class="price">Rp 890.000/lembar</span></li>
+            </ul>
+
+            <h3>Papan Gypsum</h3>
+            <ul>
+                <li>Applus 9MM: <span class="price">Rp 48.000</span></li>
+                <li>Eboard 9MM: <span class="price">Rp 47.000</span></li>
+                <li>GRC 3,5MM: <span class="price">Rp 45.500</span></li>
+            </ul>
+
+            <h3>Bata Ringan</h3>
+            <ul>
+                <li>Hebel 10: <span class="price">Rp 530.000</span></li>
+                <li>Hebel 7,5: <span class="price">Rp 530.000</span></li>
+            </ul>
+
+            <h3>Catatan</h3>
+            <p>Tersedia Besi Siku, UNP, CNP, Hollow Galvanis, Pipa Galvanis, dll. Ready Semua ukuran.</p>
+            <p>Lokasi: Cianjur Karang Tengah, Bisa COD (Bayar di tempat).</p>
+            <p>Fast Respon WA: <strong>081234903272</strong></p>
+        </section>
+
+        <aside id="product-images">
+            <h2>Gambar Produk</h2>
+            <img src="image1.jpg" alt="Produk 1">
+            <img src="image2.jpg" alt="Produk 2">
+            <img src="image3.jpg" alt="Produk 3">
+            <img src="image5.jpg" alt="Produk 5">
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Markis Baja Cianjur. All rights reserved.</p>
+        <div class="social-links">
+            <h3>Ikuti Kami di Sosial Media</h3>
+            <a href="https://web.facebook.com/profile.php?id=100087594797448" target="_blank">
+                <img src="facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://wa.me/081234903272" target="_blank">
+                <img src="wa.png" alt="WhatsApp" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

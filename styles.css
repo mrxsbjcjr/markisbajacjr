@@ -1,0 +1,144 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url(''); /* Menetapkan gambar sebagai latar belakang */
+    background-size: cover; /* Gambar menutupi seluruh area */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    color: #333;
+}
+
+/* Styling untuk header */
+header {
+    background-color: rgba(52, 58, 64, 0.8); /* Latar belakang transparan */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header .contact-links {
+    display: flex;
+    justify-content: center; /* Memposisikan logo di tengah */
+    margin: 10px 0; /* Jarak antara judul dan logo */
+}
+
+header .social-icon {
+    width: 40px; /* Ukuran logo */
+    height: auto; /* Mempertahankan rasio aspek */
+    margin: 0 10px; /* Jarak antar logo */
+}
+
+/* Styling untuk kontainer */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Styling untuk daftar harga */
+#price-list {
+    flex: 1 1 100%; /* Mengatur agar memenuhi 100% lebar pada mobile */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#price-list h2 {
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#price-list h3 {
+    margin-top: 20px;
+    color: #007bff;
+}
+
+/* Styling untuk daftar harga */
+#price-list ul {
+    list-style-type: none;
+}
+
+#price-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.price {
+    font-weight: bold;
+    color: #28a745; /* Warna hijau untuk harga */
+}
+
+/* Styling untuk aside produk */
+#product-images {
+    flex: 1 1 100%; /* Mengatur agar memenuhi 100% lebar pada mobile */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#product-images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Styling untuk footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Styling untuk tautan sosial media */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links .social-icon {
+    width: 40px; /* Ukuran logo yang sama dengan header */
+    height: auto; /* Mempertahankan rasio aspek */
+    margin: 0 10px; /* Jarak antar logo */
+}
+
+/* Media query untuk responsif */
+@media (min-width: 768px) {
+    #price-list {
+        flex: 2; /* Memberikan lebih banyak ruang pada layar lebih besar */
+    }
+
+    #product-images {
+        flex: 1;
+        margin-left: 20px; /* Menambahkan margin untuk desktop */
+        margin-top: 0; /* Menghilangkan margin top pada desktop */
+    }
+}
